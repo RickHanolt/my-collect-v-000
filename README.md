@@ -51,3 +51,13 @@ Your method should behave the same way––iterating over the given collection 
 Make sure to run bundle install before running your tests.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/my-collect' title='My #collect'>My `#collect`</a> on Learn.co and start learning to code for free.</p>
+
+def my_collect(empty_array)
+  collection = []
+  i = 0
+  while i < empty_array.length
+    collection.push(yield empty_array[i])
+    i += 1
+  end
+  collection
+end
